@@ -1,9 +1,3 @@
-<?php /*Template Name: Landing*/ ?>
-<?php global $wp_query; ?>
-<?php if (have_posts()) : ?>
-<?php while (have_posts()) : the_post(); ?>
-
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -18,11 +12,5 @@
 </head>
 <body>
     <header class="header">
-        
+        <h1>TESST</h1>
     </header>
-</body>
-</html>
-
-
-<?php endwhile; ?>
-<?php endif; ?>

@@ -8,7 +8,7 @@ function trasteos_pabon_styles()
 
     $theme_version = wp_get_theme()->get('Version');
 
-    wp_enqueue_style('oscar-style', get_template_directory_uri() . '/assets/css/main.min.css', false, $theme_version);
+    wp_enqueue_style('oscar-style', get_template_directory_uri() . '/assets/production/mincss/main.min.css', false, $theme_version);
 }
 
 add_action('wp_enqueue_scripts', 'trasteos_pabon_styles');

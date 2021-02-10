@@ -1,4 +1,43 @@
+main {
+    background: linear-gradient(to right top, #ebe494, #f7be68);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+}
+.glass {
+    background: white;
+    min-height: 80vh;
+    width: 70%;
+    background: linear-gradient(to right bottom, rgba(255,255,255, 0.7), rgba(255,255,255, 0.3));
+    border-radius: 2rem;
+    backdrop-filter: blur(2rem);
+    position: relative;
+    z-index: 1;
+}
 
+.circle1,.circle2 {
+    background: white;
+    background: linear-gradient(to right bottom, rgba(255,255,255, 0.9), rgba(255,255,255, 0.1));
+    position: absolute;
+    border-radius: 50%;
+    
+}
+.circle1 {
+    height: 200px;
+    width: 200px;
+    top: 10%;
+    left: 10%;
+    transform: translate(-10%,-10%);
+}
+.circle2 {
+    height: 300px;
+    width: 300px;
+    bottom: -10%;
+    right: 5%;
+    transform: translate(-5%, 10%);
+}
 @media (max-width: $breakpoint-mobile) {
 
 }

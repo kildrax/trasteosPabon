@@ -1,34 +1,13 @@
 /*Global Styles*/
-html,
-body {
-  position: relative;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-}
-
 * {
   margin: 0;
   padding: 0;
   list-style: none;
+  box-sizing: border-box;
 }
 
 a {
   text-decoration: none;
-}
-
-figure {
-  margin: 0;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  flex: 1 0 auto;
 }
 
 /* Animations */
