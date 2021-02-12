@@ -16,18 +16,18 @@ add_action('wp_enqueue_scripts', 'trasteos_pabon_styles');
 /**
  * Register and Enqueue Scripts.
  */
-// function trasteos_pabon_scripts()
-// {
+function trasteos_pabon_scripts()
+{
 
-//     $theme_version = wp_get_theme()->get('Version');
+    $theme_version = wp_get_theme()->get('Version');
 
-//     if ((!is_admin()) && is_singular() && comments_open() && get_option('thread_comments')) {
-//         wp_enqueue_script('comment-reply');
-//     }
-//     wp_enqueue_script('main-js', get_template_directory_uri() . '/assets/minjs/main.min.js', false, $theme_version, true);
-// }
+    if ((!is_admin()) && is_singular() && comments_open() && get_option('thread_comments')) {
+        wp_enqueue_script('comment-reply');
+    }
+    wp_enqueue_script('main-js', get_template_directory_uri() . '/assets/production/minjs/main.min.js', false, $theme_version, true);
+}
 
-// add_action('wp_enqueue_scripts', 'trasteos_pabon_scripts');
+add_action('wp_enqueue_scripts', 'trasteos_pabon_scripts');
 
 /**Register menu option**/
 if (!function_exists('mytheme_register_nav_menu')) {
